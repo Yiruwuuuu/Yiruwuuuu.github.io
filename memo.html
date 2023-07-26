@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="memo.css">
+  <title>備忘錄</title>
+</head>
+<body>
+  <div class="container">
+    <h1>備忘錄</h1>
+    <form id="memo-form">
+      <label for="event-input">事件:</label>
+      <input type="text" id="event-input" required>
+      <label for="date-input">日期:</label>
+      <input type="date" id="date-input" required>
+      <label for="time-input">時間:</label>
+      <input type="time" id="time-input" required>
+      <label for="address-input">地址:</label>
+      <input type="text" id="address-input" required>
+      <label for="tag-input">標籤:</label>
+      <input type="text" id="tag-input" required>
+      <button type="submit">新增</button>
+      <button type="reset">重置</button>
+    </form>
+    <div class="filter-bar">
+      <input type="text" id="search-input" placeholder="搜尋事件或標籤">
+      <select id="tag-filter">
+        <option value="all">全部</option>
+      </select>
+    </div>
+    <div id="memo-list" class="memo-list"></div>
+  </div>
+  <script src="memo.js"></script>
+</body>
+</html>

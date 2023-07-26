@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>倒數計時器</title>
+  <link rel="stylesheet" type="text/css" href="timing.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="display">
+      <span id="hours" class="time">00</span>:<span id="minutes" class="time">00</span>:<span id="seconds" class="time">00</span>
+    </div>
+    <div class="controls">
+      <button id="startButton" onclick="startTimer()">開始</button>
+      <button id="stopButton" onclick="stopTimer()" disabled>停止</button>
+    </div>
+    <div class="setTime">
+      <input id="setHours" type="number" min="0" max="23" placeholder="時">
+      <input id="setMinutes" type="number" min="0" max="59" placeholder="分">
+      <input id="setSeconds" type="number" min="0" max="59" placeholder="秒">
+      <button id="setTimeButton" onclick="setTimer()">設置時間</button>
+    </div>
+  </div>
+
+  <script src="timing.js"></script>
+</body>
+</html>

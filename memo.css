@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6495ED;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.memo-list {
+  margin-top: 20px;
+}
+
+.memo-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.event {
+  margin: 0;
+  color: #333;
+}
+
+.time {
+  margin: 0;
+  color: #666;
+}
+
+.address {
+  margin: 0;
+  color: #666;
+}
+
+.tag {
+  margin: 0;
+  color: #666;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  background-color: #FFD700;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#tag-filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

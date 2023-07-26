@@ -1,0 +1,55 @@
+.timer {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.display {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.time {
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f9c4d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.setTime {
+  margin-top: 20px;
+}
+
+input {
+  width: 40px;
+  padding: 5px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+#setTimeButton {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f9c4d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
