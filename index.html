@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -153,4 +153,194 @@
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
 
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Judy Studio</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* 主色調：藍色 */
+    :root {
+      --primary-color: #007BFF;
+      --primary-color-light: #4DA8FF;
+      --primary-color-dark: #0056b3;
+      --background-color: #F5F5F5;
+      --text-color: #333333;
+    }
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+    .navbar {
+      background-color: var(--primary-color);
+    }
+    .navbar .navbar-brand,
+    .navbar .navbar-nav li a {
+      color: #fff;
+    }
+    .navbar .navbar-nav li a:hover {
+      color: var(--primary-color-light);
+    }
+    .parallaxTop {
+      background-color: var(--primary-color-light);
+    }
+    .serviceBlock h1 {
+      color: var(--primary-color-dark);
+    }
+    .contactForm h2 {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>    
+    <title>Judy Studio - Website</title>
+  </head>
+  <body>
+<!--  Navigation Bar    -->
+    <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Judy Studio</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarButtons" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarButtons">          
+          <ul class="nav navbar-nav navbar-right">
+            <li id="navAbout" class="btn navbar-btn navActive">關於我們</li>
+            <li id="navServices" class="btn navbar-btn">服務項目</li>
+            <li id="navContact" class="btn navbar-btn">聯絡我們</li>
+            <a href="chat.html" class="btn navbar-btn">聊天機器人</a>
+            <a href="memo.html" class="btn navbar-btn">記事本</a>
+            <a href="calculator.html" class="btn navbar-btn">計算機</a>
+            <a href="timing.html" class="btn navbar-btn">計時器</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--  Top page image    -->
+ <div class="parallaxTop">
+   <div class="jumboBanner shadow">
+     <h1 class="banner">Judy Studio</h1>
+     <h3 class="motto">樂高 / 編程 / 管理</h3>
+     <button id="bannerBtn" class="bannerBtn">了解更多</button>
+   </div>
+ </div>
+<!--  Main content   -->    
+<!--  About row      -->
+    <div id="aboutBlock" class="container">
+      <div id="aboutRow" class="row">
+        <div class="aboutLeft col-xs-12 col-sm-6 cloak">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="aboutImg col-md-9"></div>
+          </div>
+        </div>
+        <div class="aboutRight col-xs-12 col-sm-6">
+          <div class="row">
+            <div class="col-md-9">            
+              <h2>關於 Judy Studio</h2>
+              <hr />
+              <p>我們做很多事情！Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh。</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>          
+        </div>
+      </div>
+    </div>
+<!--  Services row      -->
+    <div id="servicesRow" class="parallaxSection">
+      <div class="shadowSection">
+        <h2>服務項目</h2>
+        <hr />
+      </div>
+    </div>
+    <div id="serviceBlocks" class="row">
+      <div class="container">
+        <div class="serviceBlock col-md-4">
+          <h1>服務項目</h1>
+          <img src="https://cdn0.iconfinder.com/data/icons/thinico/88/thinico-17-512.png" />
+          <p>我們提供多樣化的服務！Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh。</p>
+        </div>
+        <div class="serviceBlock col-md-4">
+          <h1>服務項目</h1>
+          <img src="https://cdn0.iconfinder.com/data/icons/thinico/88/thinico-17-512.png" />
+          <p>我們提供多樣化的服務！Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh。</p>
+        </div>
+        <div class="serviceBlock col-md-4">
+          <h1>服務項目</h1>
+          <img src="https://cdn0.iconfinder.com/data/icons/thinico/88/thinico-17-512.png" />
+          <p>我們提供多樣化的服務！Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh。</p>
+        </div>
+      </div>
+    </div>
+<!--  Contact form      -->
+      <div id="phoneContact" class="phoneContact row">
+        <div class="container">
+          <h2>立即致電聯絡我們！撥打 1-555-555-5555</h2>
+        </div>
+      </div> 
+      <div class="container">               
+        <div id="contactRow" class="contactForm row">
+          <h2>聯絡表單</h2>
+          <hr />
+          <h3>請輸入您的聯絡資訊和留言。</h3>
+          <form name="contactForm" class="form-group" action="#" method="POST">
+            <input id="formName" name="name" class="inputInline form-control" type="text" placeholder="姓名" required />
+            <input id="formEmail" name="email" class="inputInline form-control" type="email" placeholder="電子郵件" required />
+            <textarea id="formMessage" name="message" class="form-control" type="text" placeholder="訊息" required></textarea>
+            <input name="submit" class="bannerBtn" type="submit" value="發送訊息" />
+          </form>
+        </div>        
+      </div>
+<!--  Contact info      -->
+    <div id="contactInfo" class="row">
+      <div class="container">
+        <div class="contactStack col-md-4">
+          <h4>地址</h4>
+          <p>123 測試大道</p>
+          <p>夏洛特, NC 28216</p>
+        </div>
+        <div class="contactStack col-md-4">
+          <h4>營業時間</h4>
+          <p>週一至週四：上午10:00 - 晚上11:00</p>
+          <p>週五至週日：上午11:00 - 凌晨02:00</p>
+        </div>
+        <div class="contactStack col-md-4">
+          <h4>聯絡方式</h4>
+          <p>電話：555-555-5555</p>
+          <p>電子郵件：email@JudyStudio.com</p>
+        </div>
+      </div>
+    </div>
+<!--  Copyright    -->
+    <div id="copyright" class="row">
+      <div class="container">
+        <div id="socialBtn">
+          <a href="#" class="social"><img id="facebook"></a>
+          <a href="#" class="social"><img id="twitter"></a>
+          <a href="#" class="social"><img id="linkedin"></a>
+        </div>
+        <p>&copy; 2023 Judy Studio. All rights reserved. Designed and created by Mitchell Console</p>
+      </div>
+    </div>
+  </body>
 </html>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src="./script.js"></script>
+</body>
+</html>
+
