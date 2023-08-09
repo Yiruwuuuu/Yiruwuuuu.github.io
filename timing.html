@@ -3,9 +3,35 @@
 <head>
   <title>倒數計時器</title>
   <link rel="stylesheet" type="text/css" href="timing.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 </head>
 <body>
-  <div class="timer">
+  <nav id="navigation" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Judy Studio</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarButtons" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarButtons">          
+        <ul class="nav navbar-nav navbar-right">
+          <li id="navAbout" class="navbar-btn navActive"><a href="#">About</a></li>
+          <li id="navServices" class="navbar-btn"><a href="#">Services</a></li>
+          <li id="navContact" class="navbar-btn"><a href="#">Contact</a></li>
+          <li class="navbar-btn"><a href="chat.html">Chat</a></li>
+          <li class="navbar-btn"><a href="memo.html">memo</a></li>
+          <li class="navbar-btn"><a href="calculator.html">calculator</a></li>
+          <li class="navbar-btn"><a href="timing.html">timing</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="timer" style="margin-top: 60px;"> <!-- Adjust the margin-top value as needed -->
     <div class="display">
       <span id="hours" class="time">00</span>:<span id="minutes" class="time">00</span>:<span id="seconds" class="time">00</span>
     </div>
@@ -22,5 +48,8 @@
   </div>
 
   <script src="timing.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
+
